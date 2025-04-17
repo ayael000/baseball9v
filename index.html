@@ -248,7 +248,7 @@
                         <li><strong>iOS Version Requirement:</strong> Most mods require iOS 12.0 or later</li>
                         <li><strong>Safety Check:</strong> Some mods may trigger security warnings; only download from trusted sources</li>
                         <li><strong>No Jailbreak Needed:</strong> Methods like Scarlet and Sideloadly work without jailbreaking</li>
-                    </ul>
+</ul>
                 </div>
             </div>
         </div>
@@ -418,4 +418,98 @@
 
                 <h3 class="method-title">Method 2: Install Baseball 9 Mod APK on PC</h3>
                 <p>If you want <strong>unlimited money, gems, or other mod features</strong>, follow these steps:</p>
-                <p>1. <strong>Download a Mod APK</strong> fro
+                <p>1. <strong>Download a Mod APK</strong> from trusted sites:</p>
+                <ul class="feature-list">
+                    <li><a href="https://apkmody.io/games/baseball-9" target="_blank">APKMody</a></li>
+                    <li><a href="https://happymod.com" target="_blank">HappyMod</a></li>
+                    <li><a href="https://modyolo.com/baseball-9.html" target="_blank">Modyolo</a></li>
+                    <li>(Look for "Unlimited Money" or "Menu Mod" versions)</li>
+                </ul>
+                
+                <p>2. <strong>Install the APK in BlueStacks/NoxPlayer:</strong></p>
+                <ul class="feature-list">
+                    <li>Open the emulator, click <strong>"Install APK"</strong> (usually in the sidebar)</li>
+                    <li>Select the downloaded <strong>Baseball 9 Mod APK</strong> and install</li>
+                    <li>Launch the game and enjoy <strong>unlimited resources</strong></li>
+                </ul>
+
+                <h3 class="method-title">Method 3: Use Cloud Gaming (No Download Needed)</h3>
+                <p>If you don't want to install an emulator:</p>
+                <ul class="feature-list">
+                    <li>Try <strong>Google Play Games (Beta)</strong> (if available in your region)</li>
+                    <li>Some cloud gaming services may support mobile games</li>
+                </ul>
+
+                <div class="note-box">
+                    <p><strong>Can You Play Baseball 9 on PC Without an Emulator?</strong><br>
+                    ❌ <strong>No</strong>, because it's an Android/iOS game. You <strong>must</strong> use an emulator or cloud service.</p>
+                    
+                    <p><strong>Best Emulator Settings for Baseball 9:</strong></p>
+                    <ul class="feature-list">
+                        <li>✔ <strong>RAM:</strong> Allocate at least <strong>4GB</strong> for smooth gameplay</li>
+                        <li>✔ <strong>Performance Mode:</strong> Set to <strong>High Performance</strong> (in emulator settings)</li>
+                        <li>✔ <strong>Key Controls:</strong> Customize keys for pitching/batting in BlueStacks</li>
+                    </ul>
+                    
+                    <p><strong>Mod Features Available on PC:</strong></p>
+                    <ul class="feature-list">
+                        <li>Unlimited coins, gems, stamina</li>
+                        <li>Free upgrades & unlocked players</li>
+                        <li>No ads</li>
+                    </ul>
+                    
+                    <p><strong>Final Thoughts:</strong></p>
+                    <ul class="feature-list">
+                        <li>For official play: Use <strong>BlueStacks/NoxPlayer</strong></li>
+                        <li>For mods: Install a <strong>Mod APK</strong> in the emulator</li>
+                        <li>No iOS mods on PC: iPad/iPhone mods (IPA files) <strong>won't work</strong> on Windows/Mac unless you use a virtual iOS device (hard to set up)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Baseball 9 Mod Guides. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Get all article cards and full articles
+        const articleCards = document.querySelectorAll('.article-card');
+        const fullArticles = document.querySelectorAll('.full-article');
+        const closeButtons = document.querySelectorAll('.close-btn');
+        
+        // Add click event listeners to article cards
+        articleCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const articleId = card.getAttribute('data-article');
+                const targetArticle = document.getElementById(`article-${articleId}`);
+                
+                // Hide all articles first
+                fullArticles.forEach(article => {
+                    article.classList.remove('active');
+                });
+                
+                // Show the selected article
+                targetArticle.classList.add('active');
+                
+                // Scroll to the article
+                targetArticle.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        
+        // Add click event listeners to close buttons
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const article = button.closest('.full-article');
+                article.classList.remove('active');
+                
+                // Scroll back to the articles grid
+                document.querySelector('.articles-grid').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
