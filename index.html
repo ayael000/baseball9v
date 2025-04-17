@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball 9 Mod Guides</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .article-content {
+            padding: 0;
+        }
+        
+        .article-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        .article-preview {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+        
+        .full-article {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            display: none;
+        }
+        
+        .full-article.active {
+            display: block;
+        }
+        
+        .full-article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .full-article-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+        
+        .close-btn {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .full-article-content {
+            line-height: 1.8;
+        }
+        
+        .method {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .method:last-child {
+            border-bottom: none;
+        }
+        
+        .method-title {
+            font-size: 1.3rem;
+            color: #3498db;
+            margin-bottom: 0.8rem;
+        }
+        
+        .feature-list {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .note-box {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .articles-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Baseball 9 Mod Guides</h1>
+            <p>Complete installation instructions for all devices</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <!-- Article Cards -->
+        <div class="articles-grid">
+            <div class="article-card" data-article="1">
+                <div class="article-content">
+                    <h2 class="article-title">How to Download Baseball 9 Mod on iPhone</h2>
+                    <p class="article-preview">Step-by-step guide to installing the modded version with unlimited resources on iOS devices.</p>
+                    <span class="read-more">Read more →</span>
+                </div>
+            </div>
+            
+            <div class="article-card" data-article="2">
+                <div class="article-content">
+                    <h2 class="article-title">How to Download Baseball 9 Mod on Android</h2>
+                    <p class="article-preview">Easy methods to get unlimited money, gems and all features on Android phones.</p>
+                    <span class="read-more">Read more →</span>
+                </div>
+            </div>
+            
+            <div class="article-card" data-article="3">
+                <div class="article-content">
+                    <h2 class="article-title">How to Download Baseball 9 Mod on iPad</h2>
+                    <p class="article-preview">Special instructions for iPad users to enjoy the modded game experience.</p>
+                    <span class="read-more">Read more →</span>
+                </div>
+            </div>
+            
+            <div class="article-card" data-article="4">
+                <div class="article-content">
+                    <h2 class="article-title">How to Play Baseball 9 on PC</h2>
+                    <p class="article-preview">Complete guide to running the game on Windows and Mac computers.</p>
+                    <span class="read-more">Read more →</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Full Article Display -->
+        <div class="full-article" id="article-1">
+            <div class="full-article-header">
+                <h2 class="full-article-title">How to Download Baseball 9 Mod on iPhone</h2>
+                <button class="close-btn">Close</button>
+            </div>
+
+            <div class="full-article-content">
+                <h3 class="method-title">Method 1: Using iOSGods App Store (IPA File)</h3>
+                <p>1. <strong>Download the IPA file</strong> from <a href="https://app.iosgods.com/store/appdetails/750-baseball-9-hack" target="_blank">iOSGods</a>, which provides a hacked version with unlimited coins, gems, stamina, and more.</p>
+                <p>2. <strong>Installation Steps:</strong></p>
+                <ul class="feature-list">
+                    <li>If you have the original app, uninstall it first (or use "Custom Install" to keep both versions)</li>
+                    <li>After downloading, go to <strong>Settings > General > Profiles & Device Management</strong> and trust the developer certificate</li>
+                    <li>Open the app and enjoy the mod features</li>
+                </ul>
+
+                <h3 class="method-title">Method 2: Using Scarlet/TrollStore/Esign (No Computer Needed)</h3>
+                <p>1. <strong>Download a third-party installer</strong> like <strong>Scarlet, TrollStore, or Esign</strong></p>
+                <p>2. <strong>Install the IPA file:</strong></p>
+                <ul class="feature-list">
+                    <li>Download the <strong>Baseball 9 IPA</strong> from a trusted source</li>
+                    <li>Open the file in your chosen installer (Scarlet, TrollStore, or Esign)</li>
+                    <li>Trust the developer profile in <strong>Settings > General > VPN & Device Management</strong></li>
+                </ul>
+                <p>3. <strong>Launch the game</strong> and use the mod features</p>
+
+                <h3 class="method-title">Method 3: Using Sideloadly (With Computer)</h3>
+                <p>1. <strong>Download Sideloadly</strong> (a tool for sideloading IPA files)</p>
+                <p>2. <strong>Connect your iPhone</strong> to the computer and drag the <strong>Baseball 9 IPA</strong> file into Sideloadly</p>
+                <p>3. <strong>Enter your Apple ID</strong> (a burner account is recommended for safety)</p>
+                <p>4. <strong>Start the installation</strong> and trust the app in <strong>Settings > Profiles & Device Management</strong></p>
+
+                <div class="note-box">
+                    <p><strong>Mod Features Available:</strong></p>
+                    <ul class="feature-list">
+                        <li>Unlimited coins, gems, stamina, and badges</li>
+                        <li>Free shopping, no ads, and unlimited resources</li>
+                        <li>Customizable players and team upgrades without restrictions</li>
+                    </ul>
+                    <p><strong>Important Notes:</strong></p>
+                    <ul class="feature-list">
+                        <li><strong>iOS Version Requirement:</strong> Most mods require iOS 12.0 or later</li>
+                        <li><strong>Safety Check:</strong> Some mods may trigger security warnings; only download from trusted sources</li>
+                        <li><strong>No Jailbreak Needed:</strong> Methods like Scarlet and Sideloadly work without jailbreaking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="full-article" id="article-2">
+            <div class="full-article-header">
+                <h2 class="full-article-title">How to Download Baseball 9 Mod on Android</h2>
+                <button class="close-btn">Close</button>
+            </div>
+
+            <div class="full-article-content">
+                <h3 class="method-title">Method 1: Download from Trusted Mod APK Sites</h3>
+                <p>1. <strong>Visit a trusted mod APK site</strong> such as:</p>
+                <ul class="feature-list">
+                    <li><a href="https://9mod.com/baseball-9.html" target="_blank">9Mod</a> (v3.7.0, Menu, Unlimited Money, Diamonds)</li>
+                    <li><a href="https://happymod.com/baseball-nine-428-7-mod/us.kr.baseballnine/" target="_blank">HappyMod</a> (v3.6.9, Unlimited Money)</li>
+                    <li><a href="https://modyolo.com/baseball-9.html" target="_blank">Modyolo</a> (v3.6.9, Unlimited Money, Resources)</li>
+                    <li><a href="https://gamedva.com/baseball-9-mod" target="_blank">GameDVA</a> (v3.6.9, Unlimited Diamonds, Stamina)</li>
+                </ul>
+                
+                <p>2. <strong>Download the APK file:</strong></p>
+                <ul class="feature-list">
+                    <li>Ensure the mod version matches your Android OS (e.g., Android 5.0+ for most mods)</li>
+                    <li>Check the file size (typically 200-250MB)</li>
+                </ul>
+                
+                <p>3. <strong>Enable Unknown Sources:</strong></p>
+                <ul class="feature-list">
+                    <li>Go to <strong>Settings > Security > Install unknown apps</strong></li>
+                    <li>Allow downloads from your browser or file manager</li>
+                </ul>
+                
+                <p>4. <strong>Install the APK:</strong></p>
+                <ul class="feature-list">
+                    <li>Open the downloaded file and tap <strong>Install</strong></li>
+                    <li>Wait for the installation to complete</li>
+                </ul>
+                
+                <p>5. <strong>Launch the Game:</strong></p>
+                <ul class="feature-list">
+                    <li>Open <strong>BASEBALL 9 Mod</strong> and enjoy features like unlimited money, diamonds, and stamina</li>
+                    <li>Free upgrades and no ads</li>
+                </ul>
+
+                <h3 class="method-title">Method 2: Use HappyMod (Modded App Store)</h3>
+                <p>1. <strong>Download HappyMod</strong> from <a href="https://happymod.com" target="_blank">happymod.com</a></p>
+                <p>2. <strong>Search for "BASEBALL 9 Mod"</strong></p>
+                <p>3. <strong>Select the latest mod version</strong> (e.g., v3.6.9 with Unlimited Money)</p>
+                <p>4. <strong>Install directly via HappyMod</strong> (no manual APK handling needed)</p>
+
+                <div class="note-box">
+                    <p><strong>Key Mod Features Available on Android:</strong></p>
+                    <ul class="feature-list">
+                        <li><strong>Unlimited Money & Diamonds:</strong> Buy gear, upgrade players, and customize freely</li>
+                        <li><strong>No Ads:</strong> Uninterrupted gameplay</li>
+                        <li><strong>Unlimited Stamina:</strong> Play without energy restrictions</li>
+                        <li><strong>Customization:</strong> Rename players, adjust stats, and design unique teams</li>
+                    </ul>
+                    <p><strong>Important Notes:</strong></p>
+                    <ul class="feature-list">
+                        <li><strong>Safety:</strong> Download only from trusted sources to avoid malware</li>
+                        <li><strong>Updates:</strong> Mods may not auto-update; check sites for new versions</li>
+                        <li><strong>Compatibility:</strong> Requires Android 4.4 or later</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="full-article" id="article-3">
+            <div class="full-article-header">
+                <h2 class="full-article-title">How to Download Baseball 9 Mod on iPad</h2>
+                <button class="close-btn">Close</button>
+            </div>
+
+            <div class="full-article-content">
+                <h3 class="method-title">Method 1: Install via iOSGods App Store (No Jailbreak)</h3>
+                <p>1. <strong>Download the IPA file</strong> from a trusted source like:</p>
+                <ul class="feature-list">
+                    <li><a href="https://iosgods.com" target="_blank">iOSGods</a> (search for "Baseball 9 Mod")</li>
+                    <li><a href="https://www.appvalley.vip/" target="_blank">AppValley</a> (sometimes offers modded IPA files)</li>
+                </ul>
+                
+                <p>2. <strong>Install using a signing service:</strong></p>
+                <p><strong>AltStore (requires a computer)</strong></p>
+                <ul class="feature-list">
+                    <li>Download <a href="https://altstore.io" target="_blank">AltServer</a> on a PC/Mac</li>
+                    <li>Connect your iPad, install AltStore, then sideload the IPA</li>
+                </ul>
+                
+                <p><strong>Scarlet/TrollStore (no computer needed if supported)</strong></p>
+                <ul class="feature-list">
+                    <li>Download Scarlet from <a href="https://usescarlet.com" target="_blank">usescarlet.com</a></li>
+                    <li>Open the IPA file in Scarlet and install</li>
+                </ul>
+                
+                <p>3. <strong>Trust the Developer:</strong></p>
+                <ul class="feature-list">
+                    <li>Go to <strong>Settings > General > VPN & Device Management</strong> and trust the certificate</li>
+                </ul>
+                
+                <p>4. <strong>Launch the game</strong> and enjoy mod features (unlimited coins, gems, etc.)</p>
+
+                <h3 class="method-title">Method 2: Use a Modded IPA with Sideloadly (PC/Mac Required)</h3>
+                <p>1. <strong>Download the modded IPA</strong> from sites like:</p>
+                <ul class="feature-list">
+                    <li><a href="https://iosgods.com" target="_blank">iOSGods</a></li>
+                    <li><a href="https://ipapatch.com" target="_blank">iPAPatch</a></li>
+                </ul>
+                
+                <p>2. <strong>Use Sideloadly</strong> (<a href="https://sideloadly.io" target="_blank">sideloadly.io</a>) to install:</p>
+                <ul class="feature-list">
+                    <li>Connect iPad to PC/Mac</li>
+                    <li>Drag the IPA into Sideloadly, enter Apple ID (use a burner account)</li>
+                    <li>Install and trust the app (Settings > Device Management)</li>
+                </ul>
+                
+                <p>3. <strong>Open Baseball 9 Mod</strong> and play with unlimited resources</p>
+
+                <h3 class="method-title">Method 3: Jailbreak (Advanced Users Only)</h3>
+                <p>If your iPad is <strong>jailbroken</strong>, you can:</p>
+                <ul class="feature-list">
+                    <li>Add <strong>Cydia/AltStore</strong> repos like iOSGods</li>
+                    <li>Install the modded IPA directly via <strong>Filza</strong> or <strong>Sideloadly</strong></li>
+                    <li>Use tweaks like <strong>LocalIAPStore</strong> to hack in-game purchases</li>
+                </ul>
+
+                <div class="note-box">
+                    <p><strong>Mod Features Available on iPad:</strong></p>
+                    <ul class="feature-list">
+                        <li>✔ <strong>Unlimited Money, Gems, & Stamina</strong></li>
+                        <li>✔ <strong>Free Upgrades & No Ads</strong></li>
+                        <li>✔ <strong>Unlocked All Players & Customizations</strong></li>
+                    </ul>
+                    
+                    <p><strong>Important Notes:</strong></p>
+                    <ul class="feature-list">
+                        <li>⚠ <strong>iPadOS Compatibility:</strong> Most mods require iPadOS 14+</li>
+                        <li>⚠ <strong>Revokes:</strong> Apple may block sideloaded apps every 7 days (unless using TrollStore)</li>
+                        <li>⚠ <strong>Safety:</strong> Only download IPAs from trusted sources to avoid malware</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="full-article" id="article-4">
+            <div class="full-article-header">
+                <h2 class="full-article-title">How to Play Baseball 9 on PC (Windows & Mac)</h2>
+                <button class="close-btn">Close</button>
+            </div>
+
+            <div class="full-article-content">
+                <p>Since <strong>Baseball 9</strong> is a mobile game, you'll need an <strong>Android emulator</strong> to play it on a computer. Here's how to install it (including modded versions if available):</p>
+
+                <h3 class="method-title">Method 1: Play the Official Version on PC</h3>
+                <p><strong>Using BlueStacks (Recommended for Windows & Mac)</strong></p>
+                <p>1. <strong>Download & Install BlueStacks</strong> (Android emulator):<br>
+                   <a href="https://www.bluestacks.com" target="_blank">https://www.bluestacks.com</a></p>
+                <p>2. <strong>Set Up Google Play Store</strong> (log in with a Google account)</p>
+                <p>3. <strong>Search for "Baseball 9"</strong> and install it like on a phone</p>
+                <p>4. <strong>Play with Keyboard/Mouse Controls</strong> (BlueStacks has keymapping for better gameplay)</p>
+                
+                <p><strong>Using NoxPlayer or LDPlayer (Alternative Emulators)</strong></p>
+                <ul class="feature-list">
+                    <li>Works similarly to BlueStacks</li>
+                    <li>Some emulators support <strong>higher FPS and smoother gameplay</strong></li>
+                </ul>
+
+                <h3 class="method-title">Method 2: Install Baseball 9 Mod APK on PC</h3>
+                <p>If you want <strong>unlimited money, gems, or other mod features</strong>, follow these steps:</p>
+                <p>1. <strong>Download a Mod APK</strong> fro
